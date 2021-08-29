@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerry academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+
+            font-family: 'Bree Serif', serif;
+        }
+
+        header {
+            background: url('/dance\ image.jpg') no-repeat center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 99vw;
+            height: 92vh;
+            z-index: -1;
+            opacity: 0.766;
+        }
+
+        .item {
+            display: block;
+            width: 66%;
+            margin: 32px 117px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar {
+            border: 2px solid rgb(238, 210, 210);
+            border-radius: 25px;
+            display: inline-block;
+            margin: -13px 29px 0px -106px;
+
+        }
+
+        .navbar li {
+
+            display: inline-block;
+
+        }
+
+        .navbar li a {
+
+            color: black;
+            padding: 0px 18px 0px 9px;
+            text-decoration: none;
+            font-size: 28px;
+        }
+
+        .navbar li a :hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: rgb(0, 0, 0);
+        }
+
+        .right {
+            position: absolute;
+            right: 25px;
+            top: 23px;
+            display: inline-block;
+        }
+
+        .right img {
+            width: 75px;
+            height: 87px;
+            border-radius: 26px;
+            margin: 4px 28px;
+
+        }
+
+        .right div {
+            text-align: center;
+            font-size: 1.4rem;
+            color: black;
+        }
+
+        #dance {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 1px 12px 57px;
+            margin: 135px 3px 0px 33px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #dance h1 {
+            color: black;
+            text-align: center;
+        }
+
+        #dance p {
+            color: black;
+            text-align: center;
+            margin: 2px;
+            font-size: 24px;
+        }
+
+        .dance {
+            font-size: 3.5rem;
+            padding: 15px;
+        }
+
+        .con {
+            display: flex;
+            flex-direction: row;
+            width: 967px;
+            height: 370px;
+            margin: 18px auto;
+            padding: 5px 22px 57px 30px;
+
+        }
+
+        .item1 {
+            border: 3px solid rgb(200, 155, 163);
+            margin: 6px;
+            padding: 19px;
+            border-radius: 22px;
+            font-size: 18px;
+        }
+
+
+        .item1 img {
+            height: 86px;
+            border-radius: 11px;
+            margin: auto;
+            display: block;
+            width: 78px;
+        }
+
+        #position {
+            margin: 2px;
+            padding: 0px 10px 46px 300px;
+            font-size: 29px;
+            color: #46240b
+        }
+
+        #position img {
+            position: absolute;
+            width: 99%;
+            height: 73%;
+            z-index: -1;
+            opacity: 0.3;
+            margin: -16px 0px 0px -344px;
+        }
+
+        #position p {
+            color: brown;
+            margin: 3px 0px -43px -97px;
+            padding: 0px 0px 0px 0px;
+            font-size: 25px;
+
+        }
+
+
+        .btn {
+
+            display: inline;
+            position: absolute;
+            right: 119px;
+            top: 996px;
+            color: white;
+            background-color: #1b56bf;
+            padding: 23px 36px 22px 32px;
+            font-size: 19px;
+            border-radius: 9px;
+        }
+
+        .position2 {
+            color: #000000;
+            margin: 45px 4px 16px 3px;
+            padding: 26px 80px 30px 117px;
+            border-radius: 7px;
+            font-size: 33px;
+            text-align: center;
+            justify-content: center;
+
+
+        }
+
+        #con {
+            border-radius: 9px;
+            font-size: 24px;
+            padding: 6px;
+        }
+
+        #con2 {
+            border: 2px solid rgb(19, 49, 182);
+            background-color: rgb(73, 73, 206);
+            border-radius: 12px;
+            padding: 4px;
+            font-size: 22px;
+
+
+        }
+
+        #heading {
+            margin: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+
+        #con2 {
+            border: 2px solid rgb(19, 49, 182);
+            background-color: rgb(73, 73, 206);
+            border-radius: 6px;
+            margin: 14px;
+        }
+
+        .h-centre {
+            display: flex;
+            justify-content: center;
+            font-size: 35px;
+        }
+
+        #news-section {
+            height: 69px;
+        }
+
+        #news {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #news img {
+            height: 130px;
+            border-radius: 13px;
+        }
+
+        .news-item {
+            padding: 40px;
+        }
+
+        #con3 {
+            position: absolute;
+            left: 465px;
+            top: 1540px;
+            font-size: 17px;
+        }
+
+        @media (max-width:1150px) {
+            header {
+                height: 177vh;
+            }
+
+            .item {
+                margin: 133px 272px;
+            }
+
+            .right {
+                right: 347px;
+                top: 1px;
+            }
+
+            .right img {
+                width: 57px;
+                height: 66px;
+            }
+
+            .right div {
+                font-size: 16px;
+            }
+
+            .con {
+                flex-direction: column;
+                width: 438px
+            }
+
+            .item1 {
+
+                padding: 2px 50px 7px 52px;
+            }
+
+            #dance {
+                padding: 71px 3px 28px 18px;
+            }
+
+            #position {
+                padding: 544px 20px 65px 314px;
+            }
+            #position img{
+    height: 85%;
+    margin: 72px 0px 0px -344px;
+            }
+
+            .btn {
+                top: 1750px;
+            }
+
+            #con3 {
+                left: 282px;
+                top: 2353px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="item">
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="active" target="_blank">Home</a></li>
+                    <li><a href="#" class="active" target="_blank">About</a></li>
+                    <li><a href="#" class="active" target="_blank">Dance Classes</a></li>
+                    <li><a href="#" class="active" target="_blank">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <img src="/dance.logo.jpg" alt="">
+            <div>Jerry Academy</div>
+        </div>
+    </header>
+    <section id="dance">
+        <hi class="dance">Welcome to Jerry academy</hi>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut odio aspernatur optio.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </section>
+    <div class="con">
+        <div class="item1">
+            <h2 id="heading ">HOW TO JOIN</h2>
+            <img src="/steps dance.jpg" alt="">
+            <p>Duis autem vel eurn iriurs Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum dolorem
+                excephendreit in vulputate velit esse moiestie consequat,vel illum</p>
+        </div>
+
+        <div class="item1">
+            <h2 id="heading ">OUR STYLE</h2>
+            <img src="/step dance 3.jpg" alt="">
+            <p> Atem vel eum irrure dolor Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi.in Lorem
+                ipsum dolor sit amet, consectetur adipisicing. </p>
+        </div>
+
+        <div class="item1">
+            <h2 id="heading">SCHEDULE & PRICES</h2>
+            <img src="/steps dance 2.jpg" alt="">
+            <p>Lorem ipsum dolor Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque? sit amet tem eum
+                accusamus non obcaecati amet yae sit.</p>
+        </div>
+    </div>
+    <div id="position">
+        <img src="/dance 1.png" alt="">
+        <h2>29 AUGUST 2021 DANCE CHAMPIONSHIP!</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing iores sit voluptas quae non t amet consectetur,Lorem
+            ipssect tempore quos quo.
+            adipisicing spiciatis possimus aspernatur, explicabo quibusdam architecto vero!
+            corporis.
+        </p>
+    </div>
+    <div>
+        <a href="get more information" class="btn"> More Info.</a>
+    </div> <br>
+    <div class="position2">
+        NEWSLETTER: <input id="con" type="email" name="my email" placeholder="E-mail">
+        <a href="sign up" id="con2"> sign up</a>
+        <br>
+    </div>
+    <section id="news-section">
+        <h1 class="h-centre">LATEST NEWS</h1>
+        <div id="news">
+
+            <div class="news-item">
+                <img src="/apple.png" alt="">
+            </div>
+            <div class="news-item">
+                <img src="/twitter.png" alt="">
+            </div>
+            <div class="news-item">
+                <img src="/micosoft.png" alt="">
+            </div>
+            <div class="news-item">
+                <img src="/wedsite.png" alt="">
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <p id="con3">Copyright@www.jerryacademy.com.Privacy Policy</p>
+    </footer>
+
+</body>
+
+</html>
